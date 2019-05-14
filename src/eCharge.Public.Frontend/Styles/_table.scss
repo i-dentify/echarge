@@ -1,0 +1,41 @@
+@import 'variables';
+
+table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border: none;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    th,
+    td {
+        padding: $table-cell-padding;
+        vertical-align: top;
+        text-align: left;
+        border-top: $table-border-width solid $table-border-color;
+    }
+
+    > thead {
+        th {
+            vertical-align: bottom;
+            border-bottom: (2 * $table-border-width) solid $table-border-color;
+        }
+    }
+
+
+    > tbody + tbody {
+        border-top: (2 * $table-border-width) solid $table-border-color;
+    }
+
+    td.options {
+        > button {
+            padding: 0;
+            
+            &:nth-child(n + 2) {
+                margin-left: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+        <xsd:element name="root" msdata:IsDataSet="true">
+            <xsd:complexType>
+                <xsd:choice maxOccurs="unbounded">
+                    <xsd:element name="metadata">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" use="required" type="xsd:string" />
+                            <xsd:attribute name="type" type="xsd:string" />
+                            <xsd:attribute name="mimetype" type="xsd:string" />
+                            <xsd:attribute ref="xml:space" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="assembly">
+                        <xsd:complexType>
+                            <xsd:attribute name="alias" type="xsd:string" />
+                            <xsd:attribute name="name" type="xsd:string" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="data">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+                            <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+                            <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+                            <xsd:attribute ref="xml:space" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="resheader">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" />
+                        </xsd:complexType>
+                    </xsd:element>
+                </xsd:choice>
+            </xsd:complexType>
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>2.0</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="AddCar" xml:space="preserve">
+        <value>Add car</value>
+    </data>
+    <data name="AddNewCar" xml:space="preserve">
+        <value>Add new car</value>
+    </data>
+    <data name="BatteryCapacity" xml:space="preserve">
+        <value>Battery capacity in KW</value>
+    </data>
+    <data name="CarAlreadyExists" xml:space="preserve">
+        <value>A car with this name already exists.</value>
+    </data>
+    <data name="CarDetails" xml:space="preserve">
+        <value>Car details</value>
+    </data>
+    <data name="CarDetails_Name" xml:space="preserve">
+        <value>Car details: {{name}}</value>
+    </data>
+    <data name="CarIdRequired" xml:space="preserve">
+        <value>A car id is required.</value>
+    </data>
+    <data name="CarNameRequired" xml:space="preserve">
+        <value>A name for the car is required.</value>
+    </data>
+    <data name="CarNotFound" xml:space="preserve">
+        <value>No matching car was found.</value>
+    </data>
+    <data name="ConfirmDeleteCar" xml:space="preserve">
+        <value>Do you really want to delete this car: {{name}}?</value>
+    </data>
+    <data name="EditCar_Name" xml:space="preserve">
+        <value>Edit car: {{name}}</value>
+    </data>
+    <data name="InvalidBatteryCapacity" xml:space="preserve">
+        <value>The battery capacity must be higher than 0.</value>
+    </data>
+    <data name="InvalidCarData" xml:space="preserve">
+        <value>Car data are not valid.</value>
+    </data>
+    <data name="MyCars" xml:space="preserve">
+        <value>My cars</value>
+    </data>
+    <data name="NameOfTheCar" xml:space="preserve">
+        <value>Name of the car</value>
+    </data>
+    <data name="NoCarsAssignedAddNew" xml:space="preserve">
+        <value>You have no cars assigned to your account. Do you want to add a new car?</value>
+    </data>
+    <data name="NotOwnerOfCar" xml:space="preserve">
+        <value>You are not the owner of this car.</value>
+    </data>
+    <data name="YesDeleteCar" xml:space="preserve">
+        <value>Yes, delete this car</value>
+    </data>
+</root>

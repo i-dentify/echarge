@@ -1,0 +1,9 @@
+@import 'variables';
+
+a {
+    color: $colors-palette-4;
+
+    &:hover {
+        color: $colors-palette-3;
+    }
+}

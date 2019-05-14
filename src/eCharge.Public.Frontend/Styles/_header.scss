@@ -1,0 +1,201 @@
+@import "variables";
+
+body {
+    > header {
+        border-bottom: 2px solid $colors-palette-4;
+        background-color: $colors-palette-1;
+
+        > nav {
+            > ul {
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                list-style: none;
+
+                > li {
+                    padding: 0;
+                    margin: 0;
+                    height: 60px;
+                    width: 33%;
+
+                    > a {
+                        height: 60px;
+                        margin: 0;
+                        color: $colors-palette-4;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-decoration: none;
+                        border-left: 2px solid $colors-palette-3;
+                        font-weight: bold;
+
+                        &:hover {
+                            color: $color-white;
+                            background-color: $colors-palette-3;
+                        }
+
+                        &.brand {
+                            width: 60px;
+                            color: $color-white;
+                            background-color: $colors-palette-4;
+                            justify-content: center;
+                            border-left: none;
+
+                            &:hover,
+                            &:active,
+                            &:focus,
+                            &:visited {
+                                color: $color-white;
+                            }
+
+                            > svg {
+                                font-size: 50px;
+                                vertical-align: middle;
+                                text-align: center;
+                            }
+                        }
+
+                        &.account {
+                            padding: 0;
+                            border-left: none;
+
+                            > img {
+                                width: 60px;
+                                height: 60px;
+                            }
+                        }
+
+                        &.locations,
+                        &.cars,
+                        &.charges {
+                            padding: 0 20px 0 20px;
+
+                            > svg {
+                                font-size: 30px;
+                                vertical-align: middle;
+                                text-align: center;
+                                margin-right: 0;
+                            }
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        > a {
+                            border-left: none;
+                        }
+                    }
+
+                    &:first-of-type,
+                    &:last-of-type {
+                        width: 60px;
+                    }
+
+                    &:last-of-type {
+                        margin-left: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+html {
+    &.locations {
+        body {
+            > header {
+                > nav {
+                    > ul {
+                        > li {
+                            > a {
+                                &.locations {
+                                    background-color: $colors-palette-2;
+
+                                    &:hover {
+                                        color: $color-white;
+                                        background-color: $colors-palette-3;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    &.cars {
+        body {
+            > header {
+                > nav {
+                    > ul {
+                        > li {
+                            > a {
+                                &.cars {
+                                    background-color: $colors-palette-2;
+
+                                    &:hover {
+                                        color: $color-white;
+                                        background-color: $colors-palette-3;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    &.charges {
+        body {
+            > header {
+                > nav {
+                    > ul {
+                        > li {
+                            > a {
+                                &.charges {
+                                    background-color: $colors-palette-2;
+
+                                    &:hover {
+                                        color: $color-white;
+                                        background-color: $colors-palette-3;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 40rem) {
+    body {
+        > header {
+            > nav {
+                > ul {
+                    > li {
+                        > a {
+                            justify-content: left;
+
+                            &.locations,
+                            &.cars,
+                            &.charges {
+                                &:after {
+                                    content: attr(title);
+                                }
+                                
+                                > svg {
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AssemblyName>ECharge.Services.Locations.Domain</AssemblyName>
+    <RootNamespace>ECharge.Services.Locations.Domain</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.8.1" />
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+    <PackageReference Include="EventFlow" Version="0.68.3728" />
+    <PackageReference Include="EventFlow.EntityFramework" Version="0.68.3728" />
+    <PackageReference Include="FluentValidation" Version="8.1.2" />
+    <PackageReference Include="LinqKit.Microsoft.EntityFrameworkCore" Version="1.1.15" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.2.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\eCharge.Authentication\eCharge.Authentication.csproj">
+      <Project>{4686D63E-A9D6-42EA-933F-A490385D95D0}</Project>
+      <Name>eCharge.Authentication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eCharge.Core\eCharge.Core.csproj">
+      <Project>{33AD5AB5-FF2B-49F7-A926-92D633D6D6AA}</Project>
+      <Name>eCharge.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eCharge.Core\eCharge.Core.csproj" />
+    <ProjectReference Include="..\eCharge.Domain\eCharge.Domain.csproj">
+      <Project>{6A83DDA9-23BC-49F0-BD0E-964386A67886}</Project>
+      <Name>eCharge.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eCharge.Messaging\eCharge.Messaging.csproj">
+      <Project>{70416763-7AC0-4E3F-8F17-C35E41673312}</Project>
+      <Name>eCharge.Messaging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eCharge.Models\eCharge.Models.csproj">
+      <Project>{B91EAA45-D05F-48D3-B18A-37F0F94D235E}</Project>
+      <Name>eCharge.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eCharge.Services.Locations.Resources\eCharge.Services.Locations.Resources.csproj" />
+  </ItemGroup>
+</Project>

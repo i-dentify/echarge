@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+        <xsd:element name="root" msdata:IsDataSet="true">
+            <xsd:complexType>
+                <xsd:choice maxOccurs="unbounded">
+                    <xsd:element name="metadata">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" use="required" type="xsd:string" />
+                            <xsd:attribute name="type" type="xsd:string" />
+                            <xsd:attribute name="mimetype" type="xsd:string" />
+                            <xsd:attribute ref="xml:space" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="assembly">
+                        <xsd:complexType>
+                            <xsd:attribute name="alias" type="xsd:string" />
+                            <xsd:attribute name="name" type="xsd:string" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="data">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+                            <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+                            <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+                            <xsd:attribute ref="xml:space" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="resheader">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" />
+                        </xsd:complexType>
+                    </xsd:element>
+                </xsd:choice>
+            </xsd:complexType>
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>2.0</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="Accepted" xml:space="preserve">
+        <value>Akzeptiert</value>
+    </data>
+    <data name="AcceptInvitationToLocation" xml:space="preserve">
+        <value>Einladung für diese Ladestation annehmen</value>
+    </data>
+    <data name="AddFromInvitation" xml:space="preserve">
+        <value>Von Einladung hinzufügen</value>
+    </data>
+    <data name="AddLocation" xml:space="preserve">
+        <value>Ladestation hinzufügen</value>
+    </data>
+    <data name="AddNewLocation" xml:space="preserve">
+        <value>Neue Ladestation hinzufügen</value>
+    </data>
+    <data name="Address" xml:space="preserve">
+        <value>Adresse</value>
+    </data>
+    <data name="AddressOfTheLocation" xml:space="preserve">
+        <value>Adresse der Ladestation</value>
+    </data>
+    <data name="AddressRequired" xml:space="preserve">
+        <value>Eine Adresse für die Ladestation ist erforderlich.</value>
+    </data>
+    <data name="Charges" xml:space="preserve">
+        <value>Ladevorgänge</value>
+    </data>
+    <data name="Code" xml:space="preserve">
+        <value>Code</value>
+    </data>
+    <data name="ConfirmDeleteLocation" xml:space="preserve">
+        <value>Möchten Sie wirklich diese Ladestation löschen: {{name}}?</value>
+    </data>
+    <data name="EditLocation_Name" xml:space="preserve">
+        <value>Ladestation bearbeiten: {{name}}</value>
+    </data>
+    <data name="Email" xml:space="preserve">
+        <value>Email</value>
+    </data>
+    <data name="EmailAddressOfInvitationRecipient" xml:space="preserve">
+        <value>Email-Adresse des Empfängers der Einladung.</value>
+    </data>
+    <data name="InvalidAddress" xml:space="preserve">
+        <value>Die Adresse ist ungültig.</value>
+    </data>
+    <data name="InvalidInvitationData" xml:space="preserve">
+        <value>Die Einladungsdaten sind nicht gültig.</value>
+    </data>
+    <data name="InvalidLatitude" xml:space="preserve">
+        <value>Es sind nur Werte zwischen -90 und 90 zulässig.</value>
+    </data>
+    <data name="InvalidLocationData" xml:space="preserve">
+        <value>Die Ladestationsdaten sind nicht gültig.</value>
+    </data>
+    <data name="InvalidLongitude" xml:space="preserve">
+        <value>Es sind nur Werte zwischen -180 und 180 zulässig.</value>
+    </data>
+    <data name="InvalidPricePerKw" xml:space="preserve">
+        <value>Der Preis pro KW muss größer oder gleich 0 sein.</value>
+    </data>
+    <data name="InvitationCode" xml:space="preserve">
+        <value>Einladungscode</value>
+    </data>
+    <data name="InvitationCodeRequired" xml:space="preserve">
+        <value>Ein Einladungscode ist erforderlich.</value>
+    </data>
+    <data name="InvitationDetails" xml:space="preserve">
+        <value>Einladungsdetails</value>
+    </data>
+    <data name="InvitationEmailSubject" xml:space="preserve">
+        <value>Einladung zu einer Ladestation auf eCharge</value>
+    </data>
+    <data name="InvitationIdRequired" xml:space="preserve">
+        <value>Eine Einladungs-ID ist erforderlich.</value>
+    </data>
+    <data name="InvitationNotFound" xml:space="preserve">
+        <value>Es konnte keine passende Einladung gefunden werden.</value>
+    </data>
+    <data name="Invitations" xml:space="preserve">
+        <value>Einladungen</value>
+    </data>
+    <data name="InviteNewUser" xml:space="preserve">
+        <value>Neuen Benutzer einladen</value>
+    </data>
+    <data name="LocationAlreadyExists" xml:space="preserve">
+        <value>Es existiert bereits eine Ladestation mit diesem Namen.</value>
+    </data>
+    <data name="LocationDetails" xml:space="preserve">
+        <value>Ladestationsdaten</value>
+    </data>
+    <data name="LocationDetails_Name" xml:space="preserve">
+        <value>Ladestationsdaten: {{name}}</value>
+    </data>
+    <data name="LocationIdRequired" xml:space="preserve">
+        <value>Eine ID für die Ladestation ist erforderlich.</value>
+    </data>
+    <data name="LocationNameRequired" xml:space="preserve">
+        <value>Ein Name für die Ladestation ist erforderlich.</value>
+    </data>
+    <data name="LocationNotFound" xml:space="preserve">
+        <value>Es konnte keine passende Ladestation gefunden werden.</value>
+    </data>
+    <data name="MyLocations" xml:space="preserve">
+        <value>Meine Ladestationen</value>
+    </data>
+    <data name="Name" xml:space="preserve">
+        <value>Name</value>
+    </data>
+    <data name="NameOfTheLocation" xml:space="preserve">
+        <value>Name der Ladestation</value>
+    </data>
+    <data name="NoInvitationsInviteSomeone" xml:space="preserve">
+        <value>Sie haben noch niemanden zu dieser Ladestation eingeladen. Möchten Sie jemanden einladen?</value>
+    </data>
+    <data name="NoLocationsAssignedAddNew" xml:space="preserve">
+        <value>Sie haben keine Ladestationen zu Ihrem Account zugewiesen. Möchten Sie eine neue Ladestation hinzufügen?</value>
+    </data>
+    <data name="NotOwnerOfLocation" xml:space="preserve">
+        <value>Sie sind nicht der Inhaber dieser Ladestation.</value>
+    </data>
+    <data name="PricePerKw" xml:space="preserve">
+        <value>Preis pro KW</value>
+    </data>
+    <data name="RecipientAlreadyInvited" xml:space="preserve">
+        <value>Es existiert bereits eine Einladung für diese Email-Adresse.</value>
+    </data>
+    <data name="RecipientEmailRequired" xml:space="preserve">
+        <value>Eine Email-Adresse für die Einladung ist erforderlich.</value>
+    </data>
+    <data name="YesDeleteLocation" xml:space="preserve">
+        <value>Ja, diese Ladestation löschen</value>
+    </data>
+</root>

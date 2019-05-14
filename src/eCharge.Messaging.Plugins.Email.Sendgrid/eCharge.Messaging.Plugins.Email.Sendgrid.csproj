@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AssemblyName>ECharge.Messaging.Plugins.Email.Sendgrid</AssemblyName>
+    <RootNamespace>ECharge.Messaging.Plugins.Email.Sendgrid</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\eCharge.Messaging\eCharge.Messaging.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Sendgrid" Version="9.10.0" />
+  </ItemGroup>
+</Project>

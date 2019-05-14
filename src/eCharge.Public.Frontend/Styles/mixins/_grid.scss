@@ -1,0 +1,43 @@
+@import '../variables';
+
+@mixin make-column($size, $columns: $grid-columns) {
+    flex: 0 0 100%;
+    max-width: 100%;
+    
+    @media (min-width: 80.0rem) {
+        margin-bottom: inherit;
+        padding: 0 1.0rem;
+        flex: 0 0 percentage($size / $columns);
+        max-width: percentage($size / $columns);
+    }
+}
+
+@mixin make-column-offset($size, $columns: $grid-columns) {
+    $num: $size / $columns;
+    margin-left: 0;
+
+    @media (min-width: 80.0rem) {
+        margin-left: if($num == 0, 0, percentage($num));
+    }
+}
+
+@mixin make-grid-columns($columns: $grid-columns) {
+    %grid-column {
+        display: block;
+        flex: 1 1 auto;
+        margin-left: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    @for $i from 1 through $columns {
+        .col-#{$i} {
+            @extend %grid-column;
+            @include make-column($i, $columns);
+        }
+        
+        .col-offset-#{$i} {
+            @include make-column-offset($i, $columns);
+        }
+    }
+}

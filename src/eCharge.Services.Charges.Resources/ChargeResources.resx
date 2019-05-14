@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+        <xsd:element name="root" msdata:IsDataSet="true">
+            <xsd:complexType>
+                <xsd:choice maxOccurs="unbounded">
+                    <xsd:element name="metadata">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" use="required" type="xsd:string" />
+                            <xsd:attribute name="type" type="xsd:string" />
+                            <xsd:attribute name="mimetype" type="xsd:string" />
+                            <xsd:attribute ref="xml:space" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="assembly">
+                        <xsd:complexType>
+                            <xsd:attribute name="alias" type="xsd:string" />
+                            <xsd:attribute name="name" type="xsd:string" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="data">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+                            <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+                            <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+                            <xsd:attribute ref="xml:space" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="resheader">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" />
+                        </xsd:complexType>
+                    </xsd:element>
+                </xsd:choice>
+            </xsd:complexType>
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>2.0</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="AddChargeForLocationAndCar" xml:space="preserve">
+        <value>Add charge for charging point '{{location}}' and car '{{car}}'</value>
+    </data>
+    <data name="AddNewCharge" xml:space="preserve">
+        <value>Add new charge</value>
+    </data>
+    <data name="Car" xml:space="preserve">
+        <value>Car</value>
+    </data>
+    <data name="CarRequired" xml:space="preserve">
+        <value>A car is required.</value>
+    </data>
+    <data name="ChargeDetails" xml:space="preserve">
+        <value>Charge details</value>
+    </data>
+    <data name="ChargesForUserAtLocation" xml:space="preserve">
+        <value>Charges for user '{{user}}' at charging point '{{location}}'</value>
+    </data>
+    <data name="ChargingCostsPerCar" xml:space="preserve">
+        <value>Charging costs per car</value>
+    </data>
+    <data name="ChargingCostsPerClearance" xml:space="preserve">
+        <value>Charging costs per status</value>
+    </data>
+    <data name="ChargingCostsPerLocation" xml:space="preserve">
+        <value>Charging costs per charging point</value>
+    </data>
+    <data name="ChargingCostsPerMonth" xml:space="preserve">
+        <value>Charging costs per month</value>
+    </data>
+    <data name="CloseCharges" xml:space="preserve">
+        <value>Clear charges</value>
+    </data>
+    <data name="Closed" xml:space="preserve">
+        <value>Cleared</value>
+    </data>
+    <data name="Date" xml:space="preserve">
+        <value>Date</value>
+    </data>
+    <data name="DateCannotBeInFuture" xml:space="preserve">
+        <value>The date cannot be in future.</value>
+    </data>
+    <data name="DateRequired" xml:space="preserve">
+        <value>A date is required.</value>
+    </data>
+    <data name="Expenses" xml:space="preserve">
+        <value>Expenses</value>
+    </data>
+    <data name="FinalBatteryLoad" xml:space="preserve">
+        <value>Final battery load in %</value>
+    </data>
+    <data name="InitialBatteryLoad" xml:space="preserve">
+        <value>Initial battery load in %</value>
+    </data>
+    <data name="InvalidBatteryCapacity" xml:space="preserve">
+        <value>The battery capacity must be higher than 0.</value>
+    </data>
+    <data name="InvalidChargeData" xml:space="preserve">
+        <value>Charge data are not valid.</value>
+    </data>
+    <data name="InvalidDate" xml:space="preserve">
+        <value>The date is not valid.</value>
+    </data>
+    <data name="InvalidLoadStart" xml:space="preserve">
+        <value>The initial battery load must be greater than or equal to 0.</value>
+    </data>
+    <data name="InvalidPricePerKw" xml:space="preserve">
+        <value>The price per KW must be equal or greater than 0.</value>
+    </data>
+    <data name="LoadEndMustBeHigherThanStart" xml:space="preserve">
+        <value>The final battery load must be higher than the initial battery load.</value>
+    </data>
+    <data name="Location" xml:space="preserve">
+        <value>Charging point</value>
+    </data>
+    <data name="LocationRequired" xml:space="preserve">
+        <value>A charging station is required.</value>
+    </data>
+    <data name="Month" xml:space="preserve">
+        <value>Month</value>
+    </data>
+    <data name="MyCharges" xml:space="preserve">
+        <value>My charges</value>
+    </data>
+    <data name="NoChargeDataAvailable" xml:space="preserve">
+        <value>There are no charge data available.</value>
+    </data>
+    <data name="NoChargesAddNew" xml:space="preserve">
+        <value>You have no charges for this charging point and car. Do you want to add a new charge?</value>
+    </data>
+    <data name="NoClosedCharges" xml:space="preserve">
+        <value>There are no closed charges yet.</value>
+    </data>
+    <data name="NoOpenCharges" xml:space="preserve">
+        <value>The user does not have any open charges yet.</value>
+    </data>
+    <data name="Open" xml:space="preserve">
+        <value>Open</value>
+    </data>
+    <data name="PriceInEur" xml:space="preserve">
+        <value>Price in €</value>
+    </data>
+    <data name="SelectCar" xml:space="preserve">
+        <value>--- Select a car ---</value>
+    </data>
+    <data name="SelectLocation" xml:space="preserve">
+        <value>--- Select a charging point ---</value>
+    </data>
+    <data name="UsedLoad" xml:space="preserve">
+        <value>Used load in KW</value>
+    </data>
+</root>

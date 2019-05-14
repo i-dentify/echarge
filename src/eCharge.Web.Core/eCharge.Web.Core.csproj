@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AssemblyName>ECharge.Web.Core</AssemblyName>
+    <RootNamespace>ECharge.Web.Core</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.8.1" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.3.1" />
+    <PackageReference Include="EventFlow" Version="0.68.3728" />
+    <PackageReference Include="EventFlow.Autofac" Version="0.68.3728" />
+    <PackageReference Include="EventFlow.EntityFramework" Version="0.68.3728" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="8.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="3.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="4.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\eCharge.Authentication\eCharge.Authentication.csproj">
+      <Project>{4686D63E-A9D6-42EA-933F-A490385D95D0}</Project>
+      <Name>eCharge.Authentication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eCharge.Core\eCharge.Core.csproj">
+      <Project>{33AD5AB5-FF2B-49F7-A926-92D633D6D6AA}</Project>
+      <Name>eCharge.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eCharge.IoC\eCharge.IoC.csproj">
+      <Project>{A54BFE3B-93BE-4374-98C4-9A962AF7051C}</Project>
+      <Name>eCharge.IoC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eCharge.Messaging.Plugins.Email.Sendgrid\eCharge.Messaging.Plugins.Email.Sendgrid.csproj">
+      <Project>{AFDA6A69-9678-460F-9E5B-B53AE90C3DC9}</Project>
+      <Name>eCharge.Messaging.Plugins.Email.Sendgrid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eCharge.Messaging\eCharge.Messaging.csproj">
+      <Project>{70416763-7AC0-4E3F-8F17-C35E41673312}</Project>
+      <Name>eCharge.Messaging</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,20 @@
+@using System.Globalization
+@using ECharge.Public.Frontend.Resources
+<!DOCTYPE html>
+<html lang="@CultureInfo.CurrentUICulture.TwoLetterISOLanguageName">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>@UIResources.ApplicationTitle</title>
+        <link href="~/dist/styles.css" rel="stylesheet" asp-append-version="true"/>
+    </head>
+    <body>
+        @RenderBody()
+        <script src="//cdn.polyfill.io/v2/polyfill.min.js"></script>
+        <script src="//cdn.auth0.com/js/auth0/9.10.0/auth0.min.js"></script>
+        <script src="~/dist/manifest.bundle.js" asp-append-version="true"></script>
+        <script src="~/dist/vendor.bundle.js" asp-append-version="true"></script>
+        <script src="~/dist/main.bundle.js" asp-append-version="true"></script>
+    </body>
+</html>

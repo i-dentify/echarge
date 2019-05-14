@@ -1,0 +1,23 @@
+@using ECharge.Models
+@using Microsoft.Extensions.Options
+@model ECharge.Services.Locations.Domain.Locations.ViewModels.Invitation
+@inject IOptions<ApplicationSettings> Settings
+
+@{
+    Layout = "_EmailLayout";
+}
+
+<h1>Einladung zu einer Ladestation</h1>
+<br />
+<p>
+    <strong>Hallo,</strong>
+</p>
+<p>Sie wurden zu einer eCharge-Ladestation eingeladen. Um diese Einladung anzunehmen, führen Sie bitte folgende Schritte aus:</p>
+<p>
+    - Rufen sie die Url <a href="@Settings.Value.Frontend">@Settings.Value.Frontend</a> in Ihrem Browser auf und melden Sie sich mit Ihrem Benutzeraccount an<br />
+    - Klicken Sie auf den Menüpunkt "Ladestationen" und wählen Sie die Option "Von Einladung hinzufügen"<br />
+    - Geben Sie im angezeigten Formular folgenden Code ein: <strong>@Model.Id</strong>
+</p>
+<footer>
+    <p>Vielen Dank!</p>
+</footer>

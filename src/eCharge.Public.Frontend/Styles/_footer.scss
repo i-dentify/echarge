@@ -1,0 +1,12 @@
+@import 'variables';
+
+body {
+    > footer {
+        height: 60px;
+        background-color: $colors-palette-4;
+        text-align: right;
+        color: $color-white;
+        line-height: 60px;
+        padding: 0 20px 0 0;
+    }
+}

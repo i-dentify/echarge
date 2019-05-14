@@ -1,0 +1,14 @@
+div.chart {
+    width: 300px;
+    height: 300px;
+    
+    &.empty {
+        padding-top: 8px;
+        
+        > h2 {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+}

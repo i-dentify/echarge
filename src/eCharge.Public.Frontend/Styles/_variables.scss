@@ -1,0 +1,74 @@
+/* #region [ Colors ] */
+
+$color-white: #FFFFFF;
+$color-black: #000000;
+$color-grey-1: #DEE2E6;
+$color-danger: #721C24;
+
+// Palette: http://paletton.com/#uid=12N0u0kllll3cBnchrJupeXRq8z
+$colors-palette-0: #378B2E;
+$colors-palette-1: #C6DAC4;
+$colors-palette-2: #76B570;
+$colors-palette-3: #0E6205;
+$colors-palette-4: #053800;
+
+/* #endregion [ Colors ] */
+
+/* #region [ Common ] */
+
+$border-radius: .25rem;
+
+/* #endregion [ Common ] */
+
+/* #region [ Grid ] */
+
+$grid-columns: 12;
+
+/* #endregion [ Grid ] */
+
+/* #region [ Spacing ] */
+
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge((
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3)
+), $spacers);
+
+/* #endregion [ Spacing ] */
+
+/* #region [ Tables ] */
+
+$table-bg: $color-white;
+$table-border-color: $color-grey-1;
+$table-border-width: 1px;
+$table-cell-padding: 0.75rem;
+
+/* #endregion [ Tables ] */
+
+/* #region [ Buttons ] */
+
+$button-light-border-color: $colors-palette-1;
+$button-dark-border-color: $colors-palette-4;
+$button-light-bg: $colors-palette-1;
+$button-dark-bg: $colors-palette-4;
+$button-light-color: $colors-palette-4;
+$button-dark-color: $colors-palette-1;
+$button-border-radius: $border-radius;
+$button-padding: 10px;
+$button-connector-size: 34px;
+$button-connector-space: 4px;
+$button-connector-dot-size: 12px;
+
+/* #endregion [ Buttons ] */
+
+
+/* #region [ Forms ] */
+
+
+
+/* #endregion [ Forms ] */

@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AssemblyName>ECharge.Services.Charges.Domain</AssemblyName>
+    <RootNamespace>ECharge.Services.Charges.Domain</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\eCharge.Authentication\eCharge.Authentication.csproj" />
+    <ProjectReference Include="..\eCharge.Domain\eCharge.Domain.csproj" />
+    <ProjectReference Include="..\eCharge.Models\eCharge.Models.csproj" />
+    <ProjectReference Include="..\eCharge.Services.Charges.Resources\eCharge.Services.Charges.Resources.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.8.1" />
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+    <PackageReference Include="EventFlow" Version="0.68.3728" />
+    <PackageReference Include="EventFlow.EntityFramework" Version="0.68.3728" />
+    <PackageReference Include="FluentValidation" Version="8.1.2" />
+    <PackageReference Include="LinqKit.Microsoft.EntityFrameworkCore" Version="1.1.15" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.2.0" />
+  </ItemGroup>
+</Project>

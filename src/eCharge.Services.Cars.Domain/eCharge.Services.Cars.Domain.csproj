@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AssemblyName>ECharge.Services.Cars.Domain</AssemblyName>
+    <RootNamespace>ECharge.Services.Cars.Domain</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.8.1" />
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+    <PackageReference Include="EventFlow" Version="0.68.3728" />
+    <PackageReference Include="EventFlow.EntityFramework" Version="0.68.3728" />
+    <PackageReference Include="FluentValidation" Version="8.1.2" />
+    <PackageReference Include="LinqKit.Microsoft.EntityFrameworkCore" Version="1.1.15" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.0" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.2.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\eCharge.Authentication\eCharge.Authentication.csproj" />
+    <ProjectReference Include="..\eCharge.Domain\eCharge.Domain.csproj" />
+    <ProjectReference Include="..\eCharge.Models\eCharge.Models.csproj" />
+    <ProjectReference Include="..\eCharge.Services.Cars.Resources\eCharge.Services.Cars.Resources.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\Persistence" />
+  </ItemGroup>
+</Project>

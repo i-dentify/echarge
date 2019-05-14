@@ -1,0 +1,143 @@
+@import 'variables';
+
+button, .button {
+    font-size: 1.1rem;
+    display: inline-block;
+    border: none;
+    padding: $button-padding;
+    font-weight: bold;
+    border-radius: $border-radius;
+    cursor: pointer;
+    text-decoration: none;
+    user-select: none;
+    letter-spacing: .1rem;
+    background-color: transparent;
+    
+    &:disabled {
+        opacity: 0.5;
+    }
+    
+    &:hover {
+        text-decoration: none;
+    }
+    
+    > svg {
+        margin-right: 10px;
+    }
+    
+    &.dark {
+        background: $button-dark-bg;
+        color: $button-dark-color;
+        border: 1px solid $button-dark-border-color;
+        
+        &:hover {
+            background: $button-light-bg;
+            color: $button-light-color;
+        }
+        
+        &:disabled {
+            &:hover {
+                background: $button-dark-bg;
+                color: $button-dark-color;
+            }
+        }
+    }
+    
+    &.light {
+        background: $button-light-bg;
+        color: $button-light-color;
+        border: 1px solid $button-light-border-color;
+
+        &:hover {
+            background: $button-dark-bg;
+            color: $button-dark-color;
+            border: 1px solid $button-dark-border-color;
+        }
+
+        &:disabled {
+            &:hover {
+                background: $button-light-bg;
+                color: $button-light-color;
+                border: 1px solid $button-light-border-color;
+            }
+        }
+    }
+}
+
+button, .button {
+    &.connected {
+        margin-right: $button-connector-space;
+        
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (min-width: 80.0rem) {
+    button, .button {
+        &.connected {
+            position: relative;
+            height: 18px;
+            white-space: nowrap;
+
+            &:first-of-type {
+                &:not(:last-of-type) {
+                    padding-right: 27px;
+                    margin-right: $button-connector-space / 2;
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                }
+            }
+
+            &:nth-child(n+2) {
+                margin-left: $button-connector-space / 2;
+                margin-right: $button-connector-space / 2;
+                padding-left: 27px;
+                padding-right: 27px;
+                border-radius: 0;
+
+                &:last-of-type {
+                    margin-right: 0;
+                    padding-right: 10px;
+                    border-top-right-radius: $border-radius;
+                    border-bottom-right-radius: $border-radius;
+                }
+            }
+
+            &:not(:last-of-type) {
+                &:before {
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    transform: translate(($button-connector-size + $button-connector-space + 1) / 2, -50%);
+                    width: $button-connector-size;
+                    height: $button-connector-size;
+                    border-radius: 50%;
+                    background-color: $color-white;
+                    content: "";
+                    z-index: 2;
+                    cursor: default;
+                }
+
+                &:after {
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    transform: translate(($button-connector-dot-size + $button-connector-space + 1) / 2, -50%);
+                    width: $button-connector-dot-size;
+                    height: $button-connector-dot-size;
+                    border-radius: 50%;
+                    background-color: $button-dark-bg;
+                    content: "";
+                    z-index: 3;
+                    cursor: default;
+                }
+            }
+        }
+    }
+    
+    button.connected {
+        height: 40px !important;
+    }
+}

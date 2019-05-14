@@ -1,0 +1,55 @@
+@import '../variables';
+
+@mixin make-spacing() {
+    @each $prop, $abbr in (margin: m, padding: p) {
+        @each $size, $length in $spacers {
+            .#{$abbr}-#{$size} {
+                #{$prop}: $length !important;
+            }
+
+            .#{$abbr}y-#{$size},
+            .#{$abbr}t-#{$size} {
+                #{$prop}-top: $length !important;
+            }
+
+            .#{$abbr}x-#{$size},
+            .#{$abbr}r-#{$size} {
+                #{$prop}-right: $length !important;
+            }
+
+            .#{$abbr}y-#{$size},
+            .#{$abbr}b-#{$size} {
+                #{$prop}-bottom: $length !important;
+            }
+
+            .#{$abbr}x-#{$size},
+            .#{$abbr}l-#{$size} {
+                #{$prop}-left: $length !important;
+            }
+        }
+    }
+
+    .m-auto {
+        margin: auto !important; 
+    }
+    
+    .mt-auto,
+    .my-auto {
+        margin-top: auto !important;
+    }
+    
+    .mr-auto,
+    .mx-auto {
+        margin-right: auto !important;
+    }
+    
+    .mb-auto,
+    .my-auto {
+        margin-bottom: auto !important;
+    }
+    
+    .ml-auto,
+    .mx-auto {
+        margin-left: auto !important;
+    }
+}

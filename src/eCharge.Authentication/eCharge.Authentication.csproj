@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AssemblyName>ECharge.Authentication</AssemblyName>
+    <RootNamespace>ECharge.Authentication</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\eCharge.Models\eCharge.Models.csproj">
+      <Project>{B91EAA45-D05F-48D3-B18A-37F0F94D235E}</Project>
+      <Name>eCharge.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

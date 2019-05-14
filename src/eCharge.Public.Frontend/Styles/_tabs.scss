@@ -1,0 +1,59 @@
+@import 'variables';
+
+div.tabs {
+    > ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        list-style: none;
+        border-bottom: 1px solid $color-grey-1;
+        
+        > li {
+            padding: 0;
+            margin: 0 0 1px 0;
+            height: 40px;
+            
+            > a {
+                height: 40px;
+                margin: 0;
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                text-decoration: none;
+                padding: 0 20px 0 20px;
+                cursor: pointer;
+                color: $colors-palette-4;
+                border: 1px solid transparent;
+                border-top-left-radius: $border-radius;
+                border-top-right-radius: $border-radius;
+
+                > svg {
+                    font-size: 20px;
+                    vertical-align: middle;
+                    text-align: center;
+                    margin-right: 10px;
+                }
+            }
+            
+            &.active {
+                > a {
+                    border-left-color: $color-grey-1;
+                    border-right-color: $color-grey-1;
+                    border-top-color: $color-grey-1;
+                    border-bottom-color: $color-white;
+                }
+            }
+        }
+    }
+    
+    > div {
+        padding: 10px;
+        border-left: 1px solid $color-grey-1;
+        border-right: 1px solid $color-grey-1;
+        border-bottom: 1px solid $color-grey-1;
+        border-bottom-right-radius: $border-radius;
+        border-bottom-left-radius: $border-radius;
+    }
+}

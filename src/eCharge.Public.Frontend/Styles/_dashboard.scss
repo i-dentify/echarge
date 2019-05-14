@@ -1,0 +1,34 @@
+@import 'variables';
+
+div.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    > div {
+        width: 300px;
+        height: 300px;
+        padding: 20px;
+        border: 1px solid $color-grey-1;
+        border-radius: $border-radius;
+        margin: 10px 10px 10px 0;
+        
+        &:first-of-type {
+            margin-top: 0;
+        }
+        
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (min-width: 80.0rem) {
+    div.dashboard {
+        justify-content: left;
+        
+        > div {
+            margin-top: 0;
+        }
+    }
+}

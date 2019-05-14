@@ -1,0 +1,30 @@
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.sum {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+.clearfix {
+    &:after {
+        clear: both;
+        content: ' ';
+        display: table;
+    }
+}
+
+@media(min-width: 80rem) {
+    .nowrap {
+        white-space: nowrap;
+    }
+}

@@ -1,0 +1,23 @@
+@using ECharge.Models
+@using Microsoft.Extensions.Options
+@model ECharge.Services.Locations.Domain.Locations.ViewModels.Invitation
+@inject IOptions<ApplicationSettings> Settings
+
+@{
+    Layout = "_EmailLayout";
+}
+
+<h1>Invitation to a charging point</h1>
+<br />
+<p>
+    <strong>Hello,</strong>
+</p>
+<p>You have been invited to an eCharge charging point. To accept the invitation please take the following steps:</p>
+<p>
+    - Open the url <a href="@Settings.Value.Frontend">@Settings.Value.Frontend</a> in your browser and log in with your account<br />
+    - Choose the menu option "Charging points" and click on "Add from invitation"<br />
+    - Enter the following code in the displayed form: <strong>@Model.Id</strong>
+</p>
+<footer>
+    <p>Thank you!</p>
+</footer>

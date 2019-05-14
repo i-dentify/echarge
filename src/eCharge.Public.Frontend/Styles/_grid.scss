@@ -1,0 +1,74 @@
+@import 'mixins/grid';
+
+.container {
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &.row-no-padding {
+        padding: 0;
+        
+        & > .column {
+            padding: 0;
+        }
+    }
+    
+    &.row-wrap {
+        flex-wrap: wrap;
+    }
+    
+    &.row-top {
+        align-items: flex-start;
+    }
+
+    &.row-bottom {
+        align-items: flex-end;
+    }
+
+    &.row-center {
+        align-items: center;
+    }
+
+    &.row-stretch {
+        align-items: stretch;
+    }
+
+    &.row-baseline {
+        align-items: baseline;
+    }
+    
+    @include make-grid-columns();
+    
+    .column {
+        .column-top {
+            align-self: flex-start;
+        }
+
+        .column-bottom {
+            align-self: flex-end;
+        }
+
+        .column-center {
+            align-self: center;
+        }
+    }
+}
+
+@media (min-width: 80.0rem) {
+    .container {
+        padding: 0 2.0rem;
+        width: calc(100% - 4rem);
+    }
+    
+    .row {
+        flex-direction: row;
+        margin-left: -2.0rem;
+        width: calc(100% + 2.0rem);
+    }
+}
